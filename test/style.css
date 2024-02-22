@@ -1,0 +1,73 @@
+* { /* asterisk * selects ALL tags */
+text-align: center;
+color: white; /*colour of the font*/
+font-family: sans-serif;
+}
+
+html {
+background-color: #252B3C;
+}
+
+header img {
+width:600px; /*width of logo*/
+}
+
+ul, li {
+list-style: none; /*removes bullet points*/
+padding: 0px; /*removes bullet point gap*/
+}
+
+li {
+display:inline-block; /*puts the page links beside each other*/
+}
+
+nav li a {
+display:block; /*makes the whole box clickable and not just the text*/
+transition: background 0.7s; /* smooth fade on hover */
+width: 200px;
+height: 20px;
+margin: 0 5px;
+background: #64BDC4;
+padding: 10px;
+border-radius: 20px; /*curved edges*/
+color: #252B3C;
+text-decoration:none; /*removes link underline*/
+}
+
+a#active { /*the link to the page you are already on*/
+background: #68f58b;
+}
+
+nav li a:hover { /*when the mouse hovers over the link... */
+background: white;
+}
+
+video {
+border-radius: 150px 150px 0px 0px; /*curved corners*/
+}
+
+h1 {
+font-size: 40px;
+}
+
+p, a {
+font-size: 18px;
+}
+
+section {
+width: 700px;
+margin: 0 auto; /* centres the section in the page*/
+}
+
+footer {
+margin: 0 auto; /* centres the footer in the page*/
+background: #64BDC4;
+width: 690px;
+border-radius: 20px; /*curved edges*/
+}
+
+footer p {
+color: #252B3C;
+
+padding: 10px;
+}
