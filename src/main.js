@@ -4,3 +4,5 @@ if (iceCream === "chocolate") {
 } else {
   alert("Aww, but chocolate is my favorite…");
 }
+
+// test
