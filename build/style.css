@@ -1,0 +1,70 @@
+body {
+color: white;
+font-family: "Arial", sans-serif;
+margin: 0;
+}
+
+video#background {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+}
+
+#wrapper {
+position: relative;
+width: 1000px;
+margin: 0 auto;
+background-color: #252B3C;
+padding: 10px;
+}
+
+header img {
+width:600px; /*width of logo*/
+}
+
+header {
+text-align: center;
+}
+
+a#active {
+background: #68f58b;
+}
+
+header a:hover { /*when the mouse hovers over the link... */
+background: white;
+transition: background 0.7s; /* smooth fade on hover */
+}
+
+header ul {
+list-style: none;
+}
+
+header li {
+display: inline-block;
+padding: 0px;
+}
+
+header a {
+display: block;
+width: 200px;
+margin: 0 5px;
+background: #64BDC4;
+padding: 10px;
+border-radius: 20px;
+color: #252B3C;
+text-decoration: none;
+}
+
+
+footer {
+background: #64BDC4;
+text-align: center;
+border-radius: 20px; /*curved edges*/
+
+}
+
+footer p {
+color: #252B3C;
+padding: 10px;
+}

@@ -1,73 +1,108 @@
 * { /* asterisk * selects ALL tags */
-text-align: center;
 color: white; /*colour of the font*/
-font-family: sans-serif;
+font-family: "Arial", sans-serif;
 }
 
-html {
+#myVideo {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+}
+
+body {
+margin: 0; /*no gap around the edges of the background*/
+background-image: url("https://t3.ftcdn.net/jpg/01/38/49/86/360_F_138498684_HlhsLVOcH9yhtDQgsHyfYRUJYft2mNau.jpg");
+background-size: cover; /*background image fills the page*/
+}
+
+#wrapper {
+  position: relative;
+  height: 100vh;
+width: 1000px;
 background-color: #252B3C;
+margin: 0 auto; /*centre the wrapper on the page*/
+padding: 30px; /* gap around the inside edge*/
+}
+
+header {
+text-align: center; /* centers the logo and nav*/
 }
 
 header img {
 width:600px; /*width of logo*/
 }
 
-ul, li {
+nav ul {
 list-style: none; /*removes bullet points*/
+}
+
+nav li {
+display:inline-block; /*puts the page links beside each other*/
 padding: 0px; /*removes bullet point gap*/
 }
 
-li {
-display:inline-block; /*puts the page links beside each other*/
-}
-
-nav li a {
+nav a {
 display:block; /*makes the whole box clickable and not just the text*/
-transition: background 0.7s; /* smooth fade on hover */
 width: 200px;
-height: 20px;
 margin: 0 5px;
 background: #64BDC4;
 padding: 10px;
 border-radius: 20px; /*curved edges*/
 color: #252B3C;
-text-decoration:none; /*removes link underline*/
+text-decoration: none; /*removes link underline*/
 }
 
-a#active { /*the link to the page you are already on*/
+nav a#active { /*the link to the page you are already on*/
 background: #68f58b;
 }
 
-nav li a:hover { /*when the mouse hovers over the link... */
+nav a:hover { /*when the mouse hovers over the link... */
 background: white;
+transition: background 0.7s; /* smooth fade on hover */
 }
 
-video {
-border-radius: 150px 150px 0px 0px; /*curved corners*/
-}
-
-h1 {
-font-size: 40px;
-}
-
-p, a {
-font-size: 18px;
+#content {
+display: flex; /*flexible box layout*/
+gap: 20px; /*gap between section and aside*/
 }
 
 section {
-width: 700px;
-margin: 0 auto; /* centres the section in the page*/
+width: 650px;
 }
 
+aside {
+width: 300px;
+background-color: #3b4870;
+border-radius: 30px;
+padding: 0 20px;
+}
+
+
+p,a {
+font-size: 120%;
+line-height: 1.2em;
+}
+
+
+
+
+
+
+
 footer {
-margin: 0 auto; /* centres the footer in the page*/
 background: #64BDC4;
-width: 690px;
+text-align: center;
 border-radius: 20px; /*curved edges*/
 }
 
 footer p {
 color: #252B3C;
-
 padding: 10px;
+}
+
+.video {
+border-radius: 150px 150px 0px 0px; /*curved corners*/
 }

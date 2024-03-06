@@ -1,19 +1,47 @@
 * {
 text-align: center;
 color: white;
+font-family: "Arial", sans-serif;
 }
 
 html {
 background-color: #252B3C;
 }
+body {
+margin: 0;
 
+background-image: url("https://t3.ftcdn.net/jpg/01/38/49/86/360_F_138498684_HlhsLVOcH9yhtDQgsHyfYRUJYft2mNau.jpg");
+background-size: cover;
+}
+#wrapper {background: #252B3C;}
 ul, li {
 list-style: none;
 padding: 0px;
 }
 
 li {
-display: inline;
+display: inline-block;
+}
+
+li a {
+background-color: #64BDC4;
+width: 200px;
+display: block;
+color: #252B3C;
+text-decoration: none;
+height: 30px;
+padding: 10px;
+border-radius: 30px;
+transition: background 0.7s;
+margin: 0 5px;
+}
+
+li a:hover {
+background-color: white;
+}
+
+li a#active {
+background-color: #68f58b;
 }
 
 h1 {
@@ -31,12 +59,21 @@ margin: 0 auto;
 
 
 footer {
-position: fixed;
-bottom: 0px;
 background: #64BDC4;
-width: 100%;
+width: 700px;
+margin: 0 auto;
+border-radius: 30px;
 }
 
 footer p {
 color: #252B3C;
+padding: 10px;
+}
+
+.circle {
+width: 200px;
+height: 200px;
+background-color: red;
+border-radius: 100px;
+
 }
