@@ -19,6 +19,20 @@ background-color: #252B3C;
 padding: 10px;
 }
 
+#history li {
+width: 100px;
+height: 100px;
+margin: 0 25px;
+background: #3b4870;
+display: inline-block;
+border-radius: 100%;
+text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+}
+
+
+
 header img {
 width:600px; /*width of logo*/
 }
@@ -68,3 +82,37 @@ footer p {
 color: #252B3C;
 padding: 10px;
 }
+
+#content {
+height: 300px;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 150px;
+  color: #252B3C;
+  font-size: 14px;
+  background-color: white;
+  padding: 10px 15px 10px 15px;
+    top: 120px;
+    left: -40px;
+      border-radius: 20px;
+line-height: 1em;
+
+}
+
+.hover-text:hover .tooltip {
+  visibility: visible;
+
+}
+
+.hover-text {
+  position: relative;
+  display: inline-block;
+  margin: 40px;
+  font-family: Arial;
+  text-align: center;
+}
+
