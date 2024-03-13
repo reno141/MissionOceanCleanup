@@ -1,8 +1,25 @@
+@font-face { font-family: directive-four;
+			 src: url('../font.otf'); }
+
+
+
 body {
 color: white;
-font-family: "Arial", sans-serif;
+font-family: directive-four;
 margin: 0;
 }
+
+p, a {
+font-size: 18px;
+line-height: 150%;
+text-align: center;
+}
+
+h1 {
+   font-size: 40px;
+   text-align: center;
+   }
+
 
 video#background {
    object-fit: cover;
@@ -19,17 +36,7 @@ background-color: #252B3C;
 padding: 20px;
 }
 
-#history li {
-width: 100px;
-height: 100px;
-margin: 0 25px;
-background: #3b4870;
-display: inline-block;
-border-radius: 100%;
-text-align: center;
-    line-height: 100px;
-    font-size: 40px;
-}
+
 
 header img {
 width:600px; /*width of logo*/
@@ -50,11 +57,12 @@ transition: background 0.7s; /* smooth fade on hover */
 
 header ul {
 list-style: none;
+padding: 0;
 }
 
 header li {
 display: inline-block;
-padding: 0px;
+
 }
 
 header a {
@@ -73,38 +81,69 @@ footer {
 background: #64BDC4;
 text-align: center;
 border-radius: 20px; /*curved edges*/
+padding-bottom: 10px;
 
 }
 
 footer p {
 color: #252B3C;
-padding: 15px;
 margin: 0;
+font-size: 14px;
+}
+
+footer img {
+margin-bottom: 10px;
+border-radius: 20px 20px 0 0 ;
 }
 
 
 #content {
-height: 300px;
+height: 240px;
+background: url(images/history_back.png);
+background-size: cover;
+background-position: center;
 }
 
+#history li {
+width: 100px;
+height: 100px;
+margin: 0 24px;
+background: #3b4870;
+display: inline-block;
+border-radius: 20px;
+text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+}
+
+
 .tooltip {
-  visibility: hidden;
+  opacity: 0;
   position: absolute;
   z-index: 1;
-  width: 150px;
+  width: 190px;
   color: #252B3C;
-  font-size: 14px;
+  font-size: 18px;
   background-color: white;
   padding: 10px 15px 10px 15px;
     top: 120px;
-    left: -40px;
+    left: -65px;
       border-radius: 20px;
-line-height: 1em;
+line-height: 150%;
 
 }
 
 .hover-text:hover .tooltip {
-  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.7s; /* smooth fade on hover */
+
+
+}
+#history li:hover  {
+  background-color: #68f58b;
+  color: #252B3C;
+  transition: background 0.7s; /* smooth fade on hover */
+
 
 }
 
@@ -112,7 +151,33 @@ line-height: 1em;
   position: relative;
   display: inline-block;
   margin: 40px;
-  font-family: Arial;
   text-align: center;
 }
 
+section {
+display: flex;
+gap: 20px;
+}
+
+article {
+width: 300px;
+padding: 20px;
+background: #3B4870;
+border-radius: 20px;
+margin-bottom: 20px;
+}
+
+article p {
+margin: 0;
+}
+
+article video {
+width: 280px;
+border-radius: 20px;
+}
+
+article img {
+margin: 0 auto;
+display: block;
+padding-bottom: 20px;
+}
